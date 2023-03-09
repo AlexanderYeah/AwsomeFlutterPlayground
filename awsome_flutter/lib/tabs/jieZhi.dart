@@ -2,6 +2,7 @@ import 'package:awsome_flutter/http/core/sk_error.dart';
 import 'package:flutter/material.dart';
 import '../http/core/sk_net.dart';
 import '../http/request/test_request.dart';
+import '../db/sk_cache.dart';
 
 class JieZhiPage extends StatefulWidget {
   const JieZhiPage({super.key});
@@ -14,6 +15,12 @@ class _JieZhiPageState extends State<JieZhiPage> {
   @override
   void initState() {
     super.initState();
+    // 一定要预先初始化
+    skcachePreInit();
+  }
+
+  skcachePreInit() async {
+    await SKCache.preInit();
   }
 
   loadData() async {
@@ -40,7 +47,10 @@ class _JieZhiPageState extends State<JieZhiPage> {
       body: InkWell(
         onTap: () {
           // 点击
-          loadData();
+          SKCache.getInstance().setString("Name", "Leonardo");
+
+          var value = SKCache.getInstance().get("Name");
+          print(value);
         },
         child: Container(
           child: Center(child: Text("点")),
