@@ -4,6 +4,7 @@ import 'sk_error.dart';
 import '../request/base_request.dart';
 import 'sk_net_adapter.dart';
 import 'mock_adaper.dart';
+import 'dio_adapter.dart';
 
 class SKNet {
   SKNet._();
@@ -60,12 +61,12 @@ class SKNet {
   }
 
   Future<dynamic> send<T>(BaseRequest request) async {
-    request.addHeader("isOk", "false");
+    printLog(request.url());
     printLog(request.header);
     printLog(request.httpMethod());
     printLog(request.params);
 
-    SKNetAdapter adapter = MockAdapter();
+    SKNetAdapter adapter = DioAdapter();
     return adapter.send(request);
   }
 

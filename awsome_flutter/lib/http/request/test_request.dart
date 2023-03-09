@@ -16,6 +16,6 @@ class TestRequest extends BaseRequest {
   @override
   String path() {
     // TODO: implement path
-    return "/home/banner/test";
+    return "/GwXjH2Pcb2d5a8f8129d761e0215f79b289e468a67d2359";
   }
 }

@@ -11,7 +11,7 @@ abstract class BaseRequest {
   var pathParams;
   var useHttps = true;
 
-  String domain() => "www.baidu.com";
+  String domain() => "result.eolink.com";
   // 定义方法给派生类去实现
   HttpMethod httpMethod();
   String path();
@@ -29,9 +29,9 @@ abstract class BaseRequest {
       }
     }
     if (useHttps) {
-      uri = Uri.https(domain(), pathStr, pathParams);
+      uri = Uri.https(domain(), pathStr, params);
     } else {
-      uri = Uri.http(domain(), pathStr, pathParams);
+      uri = Uri.http(domain(), pathStr, params);
     }
     print(uri.toString());
     return uri.toString();

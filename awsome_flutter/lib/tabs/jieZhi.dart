@@ -18,8 +18,7 @@ class _JieZhiPageState extends State<JieZhiPage> {
 
   loadData() async {
     TestRequest req = TestRequest();
-    req.add("name", "leonardo").add("nickname", "wolf");
-
+    req.add("uri", "/taoHuoSelectList");
     try {
       var result = await SKNet.getInstance().fire(req);
       print(result);
