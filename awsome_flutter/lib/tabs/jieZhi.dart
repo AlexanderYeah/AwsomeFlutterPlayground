@@ -51,7 +51,9 @@ class _JieZhiPageState extends State<JieZhiPage> {
   }
 
   _cardItem(index, title, content) {
-    return JZListItem(index, title, content);
+    return JZListItem(index, title, content, (value) {
+      print("${value}");
+    });
   }
 
   @override
