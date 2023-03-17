@@ -51,8 +51,15 @@ class _JieZhiPageState extends State<JieZhiPage> {
   }
 
   _cardItem(index, title, content) {
-    return JZListItem(index, title, content, (value) {
-      print("${value}");
+    return JZListItem(index, title, content, (index) {
+      switch (index) {
+        case 5:
+          print("动画");
+          Navigator.of(context).pushNamed("/animation");
+          break;
+        default:
+          break;
+      }
     });
   }
 

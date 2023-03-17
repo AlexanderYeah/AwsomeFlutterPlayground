@@ -4,11 +4,12 @@ import '../util/color.dart';
 
 class JZListItem extends StatelessWidget {
   final ValueChanged<int> callBackClick;
+  final ValueChanged<int>? tipsClick;
   final int index;
   final String title;
   final String content;
   const JZListItem(this.index, this.title, this.content, this.callBackClick,
-      {super.key});
+      {super.key, this.tipsClick});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +31,8 @@ class JZListItem extends StatelessWidget {
           children: [
             Text(
               "${index + 1}",
-              style: TextStyle(color: Colors.white, fontSize: 50),
+              style: TextStyle(
+                  color: Colors.white, fontSize: ScreenAdapter.fontSize(85)),
             ),
             SizedBox(
               width: 12,
@@ -39,24 +41,36 @@ class JZListItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: ScreenAdapter.height(10),
+                  height: ScreenAdapter.height(20),
                 ),
                 Container(
-                  height: ScreenAdapter.height(50),
-                  child: Text(
-                    title,
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: ScreenAdapter.fontSize(40)),
-                  ),
-                ),
+                    height: ScreenAdapter.height(50),
+                    width: ScreenAdapter.width(750 - 60 - 80 - 15),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          title,
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: ScreenAdapter.fontSize(40)),
+                        ),
+                        IconButton(
+                            onPressed: () {
+                              if (tipsClick != null) tipsClick!(index);
+                            },
+                            icon: Icon(
+                              Icons.help_outline,
+                              color: Colors.white,
+                            ))
+                      ],
+                    )),
                 SizedBox(
                   height: ScreenAdapter.height(5),
                 ),
                 Container(
-                  width: ScreenAdapter.width(
-                      750 - 60 - 80 - (index > 9 ? 10 : 80)),
+                  width: ScreenAdapter.width(750 - 60 - 80 - 80),
                   height: ScreenAdapter.height(80),
                   child: Text(
                     content,
