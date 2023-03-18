@@ -6,6 +6,8 @@ import '../tabs/jueXin.dart';
 import '../tabs/yongQi.dart';
 import '../jiezhi/animation/animation.dart';
 import '../jiezhi/animation/an_animation.dart';
+import '../jiezhi/storage/storage.dart';
+import '../jiezhi/storage/sto_share_preference.dart';
 
 //配置路由
 final routes = {
@@ -17,6 +19,8 @@ final routes = {
   '/pingjing': (context) => PingJingPage(),
   '/animation': (context) => AnimationPage(),
   '/an_animation': (context) => AnimationDemoPage(),
+  '/storage': (context) => StoragePage(),
+  '/sto_share_preference': (context) => SharePreferenceDemoPage(),
 };
 
 //固定写法

@@ -54,8 +54,10 @@ class _JieZhiPageState extends State<JieZhiPage> {
     return JZListItem(index, title, content, (index) {
       switch (index) {
         case 5:
-          print("动画");
           Navigator.of(context).pushNamed("/animation");
+          break;
+        case 7:
+          Navigator.of(context).pushNamed("/storage");
           break;
         default:
           break;
