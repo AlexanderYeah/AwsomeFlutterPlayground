@@ -15,6 +15,20 @@ List jz_content_data = [
   {"title": "混合开发", "content": "1231321"},
 ];
 
+List jz_widget_data = [
+  {
+    "title": "Text以及RichText",
+    "content": "文本组件,如android 开发中的TextView",
+    "tips": "显示文字以及丰富的样式，包含大小粗细阴影"
+  },
+  {
+    "title": "Button",
+    "content": "Flutter 没有给出Button组件,而是直接给出了各式各样的button组件",
+    "tips":
+        "常用的RaisedButton,FlatButton,IconButton,OutlineButton,FloatingActionButton的Button 组件"
+  },
+];
+
 List jz_Animation_data = [
   {
     "title": "Animation 对象",

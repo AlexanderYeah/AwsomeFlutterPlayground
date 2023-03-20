@@ -8,6 +8,8 @@ import '../jiezhi/animation/animation.dart';
 import '../jiezhi/animation/an_animation.dart';
 import '../jiezhi/storage/storage.dart';
 import '../jiezhi/storage/sto_share_preference.dart';
+import '../jiezhi/widget/widget_list.dart';
+import '../jiezhi/widget/text_demo.dart';
 
 //配置路由
 final routes = {
@@ -21,6 +23,8 @@ final routes = {
   '/an_animation': (context) => AnimationDemoPage(),
   '/storage': (context) => StoragePage(),
   '/sto_share_preference': (context) => SharePreferenceDemoPage(),
+  '/widget_list': (context) => WidgetListPage(),
+  '/text_demo': (context) => TextDemoPage(),
 };
 
 //固定写法

@@ -52,16 +52,21 @@ class _JieZhiPageState extends State<JieZhiPage> {
 
   _cardItem(index, title, content) {
     return JZListItem(index, title, content, (index) {
+      var targetRoute = "";
       switch (index) {
+        case 1:
+          targetRoute = "/widget_list";
+          break;
         case 5:
-          Navigator.of(context).pushNamed("/animation");
+          targetRoute = "/animation";
           break;
         case 7:
-          Navigator.of(context).pushNamed("/storage");
+          targetRoute = "/storage";
           break;
         default:
           break;
       }
+      Navigator.of(context).pushNamed(targetRoute);
     });
   }
 
