@@ -26,6 +26,10 @@ class _WidgetListPageState extends State<WidgetListPage> {
               case 0:
                 targetRoute = "/text_demo";
                 break;
+              case 1:
+                targetRoute = "/button_demo";
+                break;
+
               default:
             }
             Navigator.of(context).pushNamed(targetRoute);

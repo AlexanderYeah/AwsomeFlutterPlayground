@@ -25,7 +25,7 @@ List jz_widget_data = [
     "title": "Button",
     "content": "Flutter 没有给出Button组件,而是直接给出了各式各样的button组件",
     "tips":
-        "常用的RaisedButton,FlatButton,IconButton,OutlineButton,FloatingActionButton的Button 组件"
+        "常用的RaisedButton,FlatButton,IconButton,OutlineButton,FloatingActionButton的Button 组件, Flutter 3的SDK弃用了其中几种\n 1> FlatButton 被替换为TextButton,\n 2> RaisedButton 被替换为 ElevatedButton \n 3>OutlineButton 被替换为OutlinedButton"
   },
 ];
 

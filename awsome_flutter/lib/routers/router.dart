@@ -10,6 +10,7 @@ import '../jiezhi/storage/storage.dart';
 import '../jiezhi/storage/sto_share_preference.dart';
 import '../jiezhi/widget/widget_list.dart';
 import '../jiezhi/widget/text_demo.dart';
+import '../jiezhi/widget/button_demo.dart';
 
 //配置路由
 final routes = {
@@ -25,6 +26,7 @@ final routes = {
   '/sto_share_preference': (context) => SharePreferenceDemoPage(),
   '/widget_list': (context) => WidgetListPage(),
   '/text_demo': (context) => TextDemoPage(),
+  '/button_demo': (context) => ButtonDemoPage(),
 };
 
 //固定写法
