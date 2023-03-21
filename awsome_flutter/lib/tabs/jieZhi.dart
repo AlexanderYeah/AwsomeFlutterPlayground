@@ -57,6 +57,9 @@ class _JieZhiPageState extends State<JieZhiPage> {
         case 1:
           targetRoute = "/widget_list";
           break;
+        case 2:
+          targetRoute = "/state_list";
+          break;
         case 5:
           targetRoute = "/animation";
           break;

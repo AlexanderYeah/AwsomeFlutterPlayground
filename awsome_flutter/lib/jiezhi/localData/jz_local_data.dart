@@ -29,6 +29,16 @@ List jz_widget_data = [
   },
 ];
 
+List jz_state_data = [
+  {
+    "title": "通知",
+    "content":
+        "NSNotification是Flutter中一个重要的机制,在widget树中,每一个节点都可以发送通知，通知会沿着当前的节点（context）向上传递。",
+    "tips":
+        "所有的父节点都可以通过NotificationListener来监听通知，Flutter中这种通知由子向父的传递为通知冒泡。通知冒泡可以中止。"
+  },
+];
+
 List jz_Animation_data = [
   {
     "title": "Animation 对象",
