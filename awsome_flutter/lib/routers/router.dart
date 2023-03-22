@@ -14,6 +14,9 @@ import '../jiezhi/widget/button_demo.dart';
 import '../jiezhi/state/state_list.dart';
 import '../jiezhi/state/noti_page_a.dart';
 import '../jiezhi/state/noti_page_b.dart';
+import '../juexin/dart/dart_list.dart';
+import '../juexin/dart/dart_single_thread.dart';
+import '../juexin/dart/dart_future_stream.dart';
 
 //配置路由
 final routes = {
@@ -33,6 +36,9 @@ final routes = {
   '/state_list': (context) => StateListPage(),
   '/noti_page_a': (context) => NotiPageDemoA(),
   '/noti_page_b': (context) => NotiPageDemoB(),
+  '/dart_list': (context) => DartListPage(),
+  '/dart_single_thread': (context) => SingleThreadPage(),
+  '/dart_future_stream': (context) => DartFutureAndStreamPage(),
 };
 
 //固定写法
