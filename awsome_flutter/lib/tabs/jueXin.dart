@@ -19,6 +19,9 @@ class _JueXinPageState extends State<JueXinPage> {
         case 1:
           targetRoute = "/dart_list";
           break;
+        case 2:
+          targetRoute = "/widget_list";
+          break;
         default:
       }
       Navigator.of(context).pushNamed(targetRoute);

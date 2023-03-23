@@ -18,6 +18,8 @@ import '../juexin/dart/dart_list.dart';
 import '../juexin/dart/dart_single_thread.dart';
 import '../juexin/dart/dart_future_stream.dart';
 import '../jiezhi/state/provider_page_a.dart';
+import '../juexin/widget/widget_list.dart';
+import '../juexin/widget/widget_state_life_cycle.dart';
 
 //配置路由
 final routes = {
@@ -41,6 +43,8 @@ final routes = {
   '/dart_single_thread': (context) => SingleThreadPage(),
   '/dart_future_stream': (context) => DartFutureAndStreamPage(),
   '/provider_page_a': (context) => ProviderPageA(),
+  '/widget_list': (context) => JXWidgetListPage(),
+  '/widget_state_life_cycle': (context) => StateLifeCyclePage(),
 };
 
 //固定写法

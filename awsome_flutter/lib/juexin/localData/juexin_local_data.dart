@@ -29,4 +29,17 @@ List jx_dart_list_data = [
     "content":
         "字面意思「未来」，是用来处理异步的工具。Dart 在单线程中是以消息循环机制来运行的，其中包含两个任务队列，一个是“微任务队列” microtask queue，另一个叫做“事件队列” event queue。Future 默认情况下其实就是往「事件队列」里插入一个事件，当有空余时间的时候就去执行，当执行完毕后会回调 Future.then(v) 方法。"
   },
+  {
+    "title": "extends，implements,with 的用法和区别",
+    "content":
+        "这三种关系可以同时存在，前后有顺序extends->with->implements的顺序,\n 1>继承子类可以访问父类中所有的变量和方法 \n 2> 混入的对象是类，可以混入多个，mixin 定义的类不能有构造方法，这样可以避免多继承而产生的父类构造方法的冲突 \n 3> 一个类可以通过关键字implements 来实现一个或者多个接口并实现每个接口定义的API,例如想要创建一个A类支持B类的API 且不想继承B类，那就可以实现B类的接口"
+  },
+];
+
+List jx_widget_list_data = [
+  {
+    "route": "/widget_state_life_cycle",
+    "title": "State 的生命周期",
+    "content": "生命周期"
+  }
 ];
