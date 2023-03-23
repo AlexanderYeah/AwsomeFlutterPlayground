@@ -1,4 +1,6 @@
+import 'package:awsome_flutter/jiezhi/state/count_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import './tabs/tab.dart';
 import './routers/router.dart';
 
@@ -12,13 +14,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'Flutter Demo',
-        initialRoute: "/",
-        onGenerateRoute: onGenerateRoute,
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: Tabs());
+    return MultiProvider(
+        providers: [ChangeNotifierProvider(create: (_) => CountProvider())],
+        child: MaterialApp(
+            title: 'Flutter Demo',
+            initialRoute: "/",
+            onGenerateRoute: onGenerateRoute,
+            theme: ThemeData(
+              primarySwatch: Colors.blue,
+            ),
+            home: Tabs()));
   }
 }

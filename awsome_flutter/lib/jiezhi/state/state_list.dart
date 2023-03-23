@@ -30,22 +30,17 @@ class _StateListPageState extends State<StateListPage> {
                 case 0:
                   targetRoute = "/noti_page_a";
                   break;
-                // case 1:
-                //   targetRoute = "/button_demo";
-                //   break;
+                case 1:
+                  targetRoute = "/provider_page_a";
+                  break;
                 default:
               }
               Navigator.of(context).pushNamed(targetRoute);
             },
             tipsClick: (idx) {
-              switch (idx) {
-                case 0:
-                  TipsDialog(jz_state_data[index]["title"],
-                          jz_state_data[index]["content"], context)
-                      .openAlertDialog();
-                  break;
-                default:
-              }
+              TipsDialog(jz_state_data[index]["title"],
+                      jz_state_data[index]["tips"], context)
+                  .openAlertDialog();
             },
           );
         },

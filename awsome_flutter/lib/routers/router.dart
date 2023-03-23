@@ -17,6 +17,7 @@ import '../jiezhi/state/noti_page_b.dart';
 import '../juexin/dart/dart_list.dart';
 import '../juexin/dart/dart_single_thread.dart';
 import '../juexin/dart/dart_future_stream.dart';
+import '../jiezhi/state/provider_page_a.dart';
 
 //配置路由
 final routes = {
@@ -39,6 +40,7 @@ final routes = {
   '/dart_list': (context) => DartListPage(),
   '/dart_single_thread': (context) => SingleThreadPage(),
   '/dart_future_stream': (context) => DartFutureAndStreamPage(),
+  '/provider_page_a': (context) => ProviderPageA(),
 };
 
 //固定写法

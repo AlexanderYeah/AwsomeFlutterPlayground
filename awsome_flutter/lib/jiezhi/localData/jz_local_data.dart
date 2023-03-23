@@ -37,6 +37,13 @@ List jz_state_data = [
     "tips":
         "所有的父节点都可以通过NotificationListener来监听通知，Flutter中这种通知由子向父的传递为通知冒泡。通知冒泡可以中止。"
   },
+  {
+    "title": "provider",
+    "content":
+        "当App复杂到一定的程度，经常会出现一个页面中不同深度的子Widget需要共同访问同一个数据状态，甚至不同页面要共享同一个数据状态。",
+    "tips":
+        "这是我们就会想到InheritedWidget,塔式flutter中一个重要的功能性组件，提供了一种在widget树中从上到下的数据共享方式，比如我们在应用的跟widget中通过inheritedWidget 共享了一个数据，那么我们可以在任意的子Widget中来获取共享的数据。而Provider是对inheritedWidget组件上的上层封装，使其更加容易使用，和复用。比如说购物车的全选和反选功能计算价格"
+  },
 ];
 
 List jz_Animation_data = [
