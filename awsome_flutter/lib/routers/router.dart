@@ -20,6 +20,9 @@ import '../juexin/dart/dart_future_stream.dart';
 import '../jiezhi/state/provider_page_a.dart';
 import '../juexin/widget/widget_list.dart';
 import '../juexin/widget/widget_state_life_cycle.dart';
+import '../juexin/widget/widget_state_manage.dart';
+import '../jiezhi/state/get_x_demo.dart';
+import '../jiezhi/state/get_x_son.dart';
 
 //配置路由
 final routes = {
@@ -45,6 +48,9 @@ final routes = {
   '/provider_page_a': (context) => ProviderPageA(),
   '/widget_list': (context) => JXWidgetListPage(),
   '/widget_state_life_cycle': (context) => StateLifeCyclePage(),
+  '/widget_state_manage': (context) => StateManagePage(),
+  '/get_x_demo': (context) => GetXDemoPage(),
+  '/get_x_son': (context) => GetXSonDemoPage(),
 };
 
 //固定写法

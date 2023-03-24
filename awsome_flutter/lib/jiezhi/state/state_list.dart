@@ -25,16 +25,8 @@ class _StateListPageState extends State<StateListPage> {
             jz_state_data[index]["title"],
             jz_state_data[index]["content"],
             (idx) {
-              var targetRoute = "";
-              switch (idx) {
-                case 0:
-                  targetRoute = "/noti_page_a";
-                  break;
-                case 1:
-                  targetRoute = "/provider_page_a";
-                  break;
-                default:
-              }
+              var targetRoute = jz_state_data[index]["route"];
+
               Navigator.of(context).pushNamed(targetRoute);
             },
             tipsClick: (idx) {

@@ -31,6 +31,7 @@ List jz_widget_data = [
 
 List jz_state_data = [
   {
+    "route": "/noti_page_a",
     "title": "通知",
     "content":
         "NSNotification是Flutter中一个重要的机制,在widget树中,每一个节点都可以发送通知，通知会沿着当前的节点（context）向上传递。",
@@ -38,11 +39,19 @@ List jz_state_data = [
         "所有的父节点都可以通过NotificationListener来监听通知，Flutter中这种通知由子向父的传递为通知冒泡。通知冒泡可以中止。"
   },
   {
+    "route": "/provider_page_a",
     "title": "provider",
     "content":
         "当App复杂到一定的程度，经常会出现一个页面中不同深度的子Widget需要共同访问同一个数据状态，甚至不同页面要共享同一个数据状态。",
     "tips":
         "这是我们就会想到InheritedWidget,塔式flutter中一个重要的功能性组件，提供了一种在widget树中从上到下的数据共享方式，比如我们在应用的跟widget中通过inheritedWidget 共享了一个数据，那么我们可以在任意的子Widget中来获取共享的数据。而Provider是对inheritedWidget组件上的上层封装，使其更加容易使用，和复用。比如说购物车的全选和反选功能计算价格"
+  },
+  {
+    "route": "/get_x_demo",
+    "title": "GetX",
+    "content": "GetX 是 Flutter 上的一个轻量且强大的解决方案：高性能的状态管理、智能的依赖注入和便捷的路由管理。。",
+    "tips":
+        "GetX 因为不需要上下文，突破了InheritedWidget的限制，我们可以在全局和模块间共享状态，这正是 BLoc 、Provider 等框架的短板"
   },
 ];
 
