@@ -1,4 +1,5 @@
 import 'package:awsome_flutter/widget/jz_list_item.dart';
+import 'package:awsome_flutter/widget/tips_dailog.dart';
 import 'package:flutter/material.dart';
 import '../../juexin/localData/juexin_local_data.dart';
 
@@ -20,11 +21,19 @@ class _WidgetListPageState extends State<JXWidgetListPage> {
         child: ListView.builder(
           itemCount: jx_widget_list_data.length,
           itemBuilder: (BuildContext context, int index) {
-            return JZListItem(index, jx_widget_list_data[index]["title"],
-                jx_widget_list_data[index]["content"], (idx) {
-              String route = jx_widget_list_data[index]["route"];
-              if (route.length > 0) Navigator.of(context).pushNamed(route);
-            });
+            return JZListItem(
+              index,
+              jx_widget_list_data[index]["title"],
+              jx_widget_list_data[index]["content"],
+              (idx) {
+                String route = jx_widget_list_data[index]["route"];
+                if (route.length > 0) Navigator.of(context).pushNamed(route);
+              },
+              tipsClick: (idx) {
+                TipsDialog(jx_widget_list_data[index]["title"],
+                    jx_widget_list_data[index]["tips"], context);
+              },
+            );
           },
         ),
       ),

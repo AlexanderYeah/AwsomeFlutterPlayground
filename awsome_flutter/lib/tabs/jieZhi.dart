@@ -66,6 +66,10 @@ class _JieZhiPageState extends State<JieZhiPage> {
         case 7:
           targetRoute = "/storage";
           break;
+        case 9:
+          targetRoute = "/theme_list";
+          break;
+
         default:
           break;
       }

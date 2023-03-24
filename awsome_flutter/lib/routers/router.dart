@@ -23,6 +23,8 @@ import '../juexin/widget/widget_state_life_cycle.dart';
 import '../juexin/widget/widget_state_manage.dart';
 import '../jiezhi/state/get_x_demo.dart';
 import '../jiezhi/state/get_x_son.dart';
+import '../jiezhi/internationalAndTheme/theme_list.dart';
+import '../jiezhi/internationalAndTheme/international_demo.dart';
 
 //配置路由
 final routes = {
@@ -51,6 +53,8 @@ final routes = {
   '/widget_state_manage': (context) => StateManagePage(),
   '/get_x_demo': (context) => GetXDemoPage(),
   '/get_x_son': (context) => GetXSonDemoPage(),
+  '/theme_list': (context) => ThemeListPage(),
+  '/international_demo': (context) => InternationDemoPage(),
 };
 
 //固定写法

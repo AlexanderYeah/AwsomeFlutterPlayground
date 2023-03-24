@@ -40,12 +40,21 @@ List jx_widget_list_data = [
   {
     "route": "/widget_state_life_cycle",
     "title": "State 的生命周期",
-    "content": "生命周期"
+    "content": "生命周期",
+    "tips": ""
   },
   {
     "route": "/widget_state_manage",
     "title":
         "什么是状态管理? 总结来说就是：状态管理就是当某个状态发生改变的时候，告知使用该状态的状态监听者，让状态所监听的属性随知改变,从而达到联动效果。",
-    "content": "ScopedModel,BLoC,Redux / FishRedux,Provider"
-  }
+    "content": "ScopedModel,BLoC,Redux / FishRedux,Provider",
+    "tips": ""
+  },
+  {
+    "route": "",
+    "title": "Flutter 快速实现国际化",
+    "content": "1、通过Flutter Intl插件实现：在Plugins里面找到Flutter Intl这个插件，然后安装-重启",
+    "tips":
+        "1、通过Flutter Intl插件实现：在Plugins里面找到Flutter Intl这个插件，然后安装-重启 /n 2> GetX来实现"
+  },
 ];

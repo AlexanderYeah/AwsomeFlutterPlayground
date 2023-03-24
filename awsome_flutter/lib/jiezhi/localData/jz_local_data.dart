@@ -72,3 +72,13 @@ List jz_storage_data = [
     "tips": "\n iOS设备是基于NSUserDefaults开发的,\n Android 设备是基于SharePreference开发的"
   },
 ];
+
+List jz_theme_data = [
+  {
+    "route": "/international_demo",
+    "title": "国际化的操作",
+    "content": "本项目使用的是GetX实现的国际化",
+    "tips":
+        "\n 开发一个App，如果我们的App需要面向不同的语种（比如中文、英文、繁体等），那么我们需要对齐进行国际化开发。 \n App国际化开发主要包括：文本国际化（包括文本的顺序），Widget显示的国际化"
+  },
+];
