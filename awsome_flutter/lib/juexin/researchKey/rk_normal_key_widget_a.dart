@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class RKNormalKeyContainerA extends StatefulWidget {
-  final Color color;
-  const RKNormalKeyContainerA(this.color, {Key? key}) : super(key: key);
+  final String name;
+  const RKNormalKeyContainerA(this.name, {Key? key}) : super(key: key);
   // const RKNormalKeyContainerA({super.key, required this.color});
   @override
   State<RKNormalKeyContainerA> createState() => _RKNormalKeyContainerAState();
@@ -15,10 +15,11 @@ class _RKNormalKeyContainerAState extends State<RKNormalKeyContainerA> {
     return Container(
         width: 100,
         height: 100,
-        color: widget.color,
+        color: Colors.cyan,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Text("${widget.name}"),
             Text('$count', style: TextStyle(color: Colors.white)),
             IconButton(
               onPressed: () {
@@ -27,7 +28,10 @@ class _RKNormalKeyContainerAState extends State<RKNormalKeyContainerA> {
                 });
               },
               icon: Icon(Icons.add),
-            )
+            ),
+            Divider(
+              height: 1,
+            ),
           ],
         ));
   }

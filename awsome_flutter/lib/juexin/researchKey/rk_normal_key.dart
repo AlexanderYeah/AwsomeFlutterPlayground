@@ -1,3 +1,4 @@
+import 'package:awsome_flutter/juexin/researchKey/rk_normal_key_cart_model.dart';
 import 'package:awsome_flutter/juexin/researchKey/rk_normal_key_widget_a.dart';
 import 'package:flutter/material.dart';
 
@@ -11,13 +12,26 @@ class RKNormalKeyPage extends StatefulWidget {
 // 参考:
 // https://blog.csdn.net/u011272795/article/details/120034166?spm=1001.2014.3001.5501
 class _RKNormalKeyPageState extends State<RKNormalKeyPage> {
-  List _items = [
-    Colors.red,
-    Colors.green,
-    Colors.black,
-    Colors.yellow,
-    Colors.cyan
+  List _carts = [
+    {"name": "橘子", "id": "dasdas52d1351sdada"},
+    {"name": "苹果", "id": "dagggd1351sdada"},
+    {"name": "香蕉", "id": "dasdasjjj52d1351sdada"},
+    {"name": "西瓜", "id": "dasssa52d1351sdada"},
+    {"name": "桃子", "id": "dapppas52d1351sdada"}
   ];
+
+  List _modelList = [];
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _carts.forEach((element) {
+      _modelList.add(RKCartItem.fromJson(element));
+      setState(() {});
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,18 +47,16 @@ class _RKNormalKeyPageState extends State<RKNormalKeyPage> {
       // 并且这个key 是已经定义好的 直接传递进去就可以
       // 不要使用ValueKey(index), 因为index 会随着数组的变化而变化 使用UniqueKey(), 就可以解决这个问题
       body: ListView.builder(
-        itemCount: _items.length,
+        itemCount: _modelList.length,
         itemBuilder: (BuildContext context, int index) {
           return GestureDetector(
             onTap: () {
               setState(() {
-                _items.removeAt(index);
+                _modelList.removeAt(index);
               });
             },
-            child: RKNormalKeyContainerA(
-              _items[index],
-              key: UniqueKey(),
-            ),
+            child: RKNormalKeyContainerA(_modelList[index].name,
+                key: ValueKey(_modelList[index].id)),
           );
         },
       ),

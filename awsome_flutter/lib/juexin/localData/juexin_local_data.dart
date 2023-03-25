@@ -71,6 +71,12 @@ List jx_widget_list_data = [
 
 List jx_reseach_key_list_data = [
   {"route": "/rk_normal_key", "title": "普通的key", "content": "", "tips": ""},
-  {"route": "", "title": "", "content": "", "tips": ""},
+  {
+    "route": "/rk_widget_element",
+    "title": "Widget 和 Element",
+    "content": "Widget 和 Element 的对应关系",
+    "tips":
+        "但真正绘制在屏幕上的并不是这个Widget Tree, 我们都知道Wdiget是描述UI元素Element的配置,所以实际运行起来的时候,还会产生一个Element Tree, Element Tree就是Widget Tree实例化之后产生的对象,Widget Tree —实例化—> Element Tree"
+  },
   {"route": "", "title": "", "content": "", "tips": ""},
 ];
