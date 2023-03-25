@@ -67,6 +67,11 @@ List jx_widget_list_data = [
     "tips":
         "1、通过Flutter Intl插件实现：在Plugins里面找到Flutter Intl这个插件，然后安装-重启 /n 2> GetX来实现"
   },
+  {
+    "route": "/communicate_html",
+    "title": "Flutter 调用H5",
+    "content": "Flutter 和 H5 之间的相互调用"
+  },
 ];
 
 List jx_reseach_key_list_data = [

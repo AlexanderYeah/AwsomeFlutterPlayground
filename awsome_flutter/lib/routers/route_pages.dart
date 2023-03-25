@@ -20,6 +20,7 @@ import '../juexin/dart/dart_list.dart';
 import '../juexin/dart/dart_single_thread.dart';
 import '../juexin/dart/dart_future_stream.dart';
 import '../jiezhi/state/provider_page_a.dart';
+import '../juexin/widget/widget_h5.dart';
 import '../juexin/widget/widget_list.dart';
 import '../juexin/widget/widget_state_life_cycle.dart';
 import '../juexin/widget/widget_state_manage.dart';
@@ -71,7 +72,7 @@ List<GetPage<dynamic>> RoutePages = [
   ),
   GetPage(
     name: '/widget_list',
-    page: () => WidgetListPage(),
+    page: () => JXWidgetListPage(),
   ),
   GetPage(
     name: '/route_manage_list',
@@ -160,5 +161,9 @@ List<GetPage<dynamic>> RoutePages = [
   GetPage(
     name: '/movie_card_page',
     page: () => MovieCardPage(),
+  ),
+  GetPage(
+    name: '/communicate_html',
+    page: () => CommunicateHTMLPage(),
   ),
 ];

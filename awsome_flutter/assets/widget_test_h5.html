@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>html demo</title>
+  </head>
+  <body>
+    <div id="fromFlutter"><span>Flutter发送过来的消息是： </span></div>
+    <div id="toFlutter"><span>我发送给Flutter的消息是：</span></div>
+    <button onclick="sendMessage('这里是来自JavaScript的方法')">sendMessageToFlutter</button>
+  </body>
+  <script>
+    // <!-- 这个方法是用来给Flutter调用的（即：Flutter调用js方法）-->
+    function fromFlutterMessage (message){
+      document.getElementById ("fromFlutter").innerHTML = message;
+      return true;
+    }
+
+    // <!-- 这个方法是用来发送一个消息给Flutter的（即：js调用Flutter方法）-->
+    function sendMessage (message ) {
+      MessageDeal.postMessage(message); 
+      OpenCamera.postMessage("opencamera");
+      document.getElementById ("toFlutter").innerHTML = message;
+    }
+  </script>
+</html>
