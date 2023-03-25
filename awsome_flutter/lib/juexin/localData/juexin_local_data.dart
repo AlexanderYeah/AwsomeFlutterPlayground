@@ -78,5 +78,10 @@ List jx_reseach_key_list_data = [
     "tips":
         "但真正绘制在屏幕上的并不是这个Widget Tree, 我们都知道Wdiget是描述UI元素Element的配置,所以实际运行起来的时候,还会产生一个Element Tree, Element Tree就是Widget Tree实例化之后产生的对象,Widget Tree —实例化—> Element Tree"
   },
-  {"route": "", "title": "", "content": "", "tips": ""},
+  {
+    "route": "/rk_global_key",
+    "title": "GlobalKey的用法",
+    "content": "获取state,widget,context",
+    "tips": "获取对应的state,widget,context"
+  },
 ];

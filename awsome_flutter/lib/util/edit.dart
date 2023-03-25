@@ -7,7 +7,7 @@ class Edit {
     if (_instance == null) {
       return Edit();
     }
-    return _instance;
+    return _instance!;
   }
 
   Widget text(content) {

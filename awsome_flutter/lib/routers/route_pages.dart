@@ -30,6 +30,7 @@ import '../jiezhi/internationalAndTheme/international_demo.dart';
 import '../juexin/researchKey/research_key_list.dart';
 import '../juexin/researchKey/rk_normal_key.dart';
 import '../juexin/researchKey/rk_widget_element.dart';
+import '../juexin/researchKey/rk_global_key.dart';
 
 List<GetPage<dynamic>> RoutePages = [
   GetPage(name: "/", page: () => Tab()),
@@ -150,5 +151,9 @@ List<GetPage<dynamic>> RoutePages = [
   GetPage(
     name: '/rk_widget_element',
     page: () => RKWidgetAndElement(),
+  ),
+  GetPage(
+    name: '/rk_global_key',
+    page: () => RKGlobalKeyPage(),
   ),
 ];
