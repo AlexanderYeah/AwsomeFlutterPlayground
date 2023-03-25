@@ -31,6 +31,7 @@ import '../juexin/researchKey/research_key_list.dart';
 import '../juexin/researchKey/rk_normal_key.dart';
 import '../juexin/researchKey/rk_widget_element.dart';
 import '../juexin/researchKey/rk_global_key.dart';
+import '../yongqi/movieCard/movie_card_page.dart';
 
 List<GetPage<dynamic>> RoutePages = [
   GetPage(name: "/", page: () => Tab()),
@@ -155,5 +156,9 @@ List<GetPage<dynamic>> RoutePages = [
   GetPage(
     name: '/rk_global_key',
     page: () => RKGlobalKeyPage(),
+  ),
+  GetPage(
+    name: '/movie_card_page',
+    page: () => MovieCardPage(),
   ),
 ];
