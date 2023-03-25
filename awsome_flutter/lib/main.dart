@@ -1,5 +1,7 @@
 import 'package:awsome_flutter/jiezhi/state/count_provider.dart';
+import 'package:awsome_flutter/routers/route_pages.dart';
 import 'package:awsome_flutter/service/app_translation.dart';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import './tabs/tab.dart';
@@ -20,6 +22,7 @@ class MyApp extends StatelessWidget {
         providers: [ChangeNotifierProvider(create: (_) => CountProvider())],
         child: GetMaterialApp(
           title: "DDDD",
+          getPages: RoutePages,
           // 设置过渡动画
           defaultTransition: Transition.fade,
           // 设置默认语言
@@ -30,7 +33,6 @@ class MyApp extends StatelessWidget {
           translationsKeys: AppTranslation.translation,
           home: Tabs(),
           initialRoute: "/",
-          onGenerateRoute: onGenerateRoute,
         ));
   }
 }

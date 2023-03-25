@@ -1,12 +1,14 @@
 import 'package:awsome_flutter/http/core/sk_error.dart';
 import 'package:awsome_flutter/util/color.dart';
 import 'package:flutter/material.dart';
+import 'package:get/instance_manager.dart';
 import '../http/core/sk_net.dart';
 import '../http/request/test_request.dart';
 import '../db/sk_cache.dart';
 import '../service/screen_adapter.dart';
 import '../jiezhi/localData/jz_local_data.dart';
 import '../widget/jz_list_item.dart';
+import 'package:get/get.dart';
 
 class JieZhiPage extends StatefulWidget {
   const JieZhiPage({super.key});
@@ -60,6 +62,9 @@ class _JieZhiPageState extends State<JieZhiPage> {
         case 2:
           targetRoute = "/state_list";
           break;
+        case 4:
+          targetRoute = "/route_manage_list";
+          break;
         case 5:
           targetRoute = "/animation";
           break;
@@ -69,11 +74,10 @@ class _JieZhiPageState extends State<JieZhiPage> {
         case 9:
           targetRoute = "/theme_list";
           break;
-
         default:
           break;
       }
-      Navigator.of(context).pushNamed(targetRoute);
+      if (targetRoute.length != 0) Get.toNamed(targetRoute);
     });
   }
 

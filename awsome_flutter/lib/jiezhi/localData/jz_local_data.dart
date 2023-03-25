@@ -55,6 +55,16 @@ List jz_state_data = [
   },
 ];
 
+List jz_route_data = [
+  {
+    "route": "",
+    "title": "GetX 管理路由",
+    "content": "使用GetX 进行路由跳转非常的简单\n",
+    "tips":
+        "使用GetX 进行路由跳转非常的简单,只需要调用Get.to()即可进行路由跳转，而系统的路由跳转需要写八行代码，这是不能忍受的事情，而且涉及到跳转动画设置 、动画时长定义、动画曲线 等设置那就更加的复杂，而GetX为我们封装了Navigation，无需context可进行跳转，并且能很方便的使用跳转动画等"
+  },
+];
+
 List jz_Animation_data = [
   {
     "title": "Animation 对象",

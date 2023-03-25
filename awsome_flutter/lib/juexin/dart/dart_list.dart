@@ -3,6 +3,7 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import '../../juexin/localData/juexin_local_data.dart';
 import 'dart:math';
 import '../../widget/jx_list_item.dart';
+import 'package:get/get.dart';
 
 class DartListPage extends StatefulWidget {
   const DartListPage({super.key});
@@ -39,7 +40,7 @@ class _DartListPageState extends State<DartListPage> {
           break;
         default:
       }
-      Navigator.of(context).pushNamed(targetRoutes);
+      if (targetRoutes.length != 0) Get.to(targetRoutes);
     });
   }
 

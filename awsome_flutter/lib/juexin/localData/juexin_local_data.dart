@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
 List jx_list_data = [
-  {"title": "Dart部分", "content": "在 Dart 中，一切都是对象，所有的对象都是继承自 Object"},
-  {"title": "Widget部分", "content": "widget"},
+  {
+    "route": "/dart_list",
+    "title": "Dart部分",
+    "content": "在 Dart 中，一切都是对象，所有的对象都是继承自 Object"
+  },
+  {"route": "/widget_list", "title": "Widget部分", "content": "widget"},
+  {"route": "/research_key_list", "title": "Key的原理研究", "content": "Key的原理研究"},
 ];
 
 List jx_dart_list_data = [
@@ -34,6 +39,11 @@ List jx_dart_list_data = [
     "content":
         "这三种关系可以同时存在，前后有顺序extends->with->implements的顺序,\n 1>继承子类可以访问父类中所有的变量和方法 \n 2> 混入的对象是类，可以混入多个，mixin 定义的类不能有构造方法，这样可以避免多继承而产生的父类构造方法的冲突 \n 3> 一个类可以通过关键字implements 来实现一个或者多个接口并实现每个接口定义的API,例如想要创建一个A类支持B类的API 且不想继承B类，那就可以实现B类的接口"
   },
+  {
+    "title": "Flutter 中的key、LocalKey、GlobalKey",
+    "content":
+        "key派生出两种不同用途的Key:LocalKey、GlobalKey,LocalKey 直接继承自Key,它应用于拥有想通父Element的小部件进行比较的情况，GlobalKey 使用了一个静态常量 Map 来保存它对应的 Element。你可以通过 GlobalKey 找到持有该GlobalKey的 Widget，State 和 Element"
+  },
 ];
 
 List jx_widget_list_data = [
@@ -57,4 +67,10 @@ List jx_widget_list_data = [
     "tips":
         "1、通过Flutter Intl插件实现：在Plugins里面找到Flutter Intl这个插件，然后安装-重启 /n 2> GetX来实现"
   },
+];
+
+List jx_reseach_key_list_data = [
+  {"route": "/rk_normal_key", "title": "普通的key", "content": "", "tips": ""},
+  {"route": "", "title": "", "content": "", "tips": ""},
+  {"route": "", "title": "", "content": "", "tips": ""},
 ];
