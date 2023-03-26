@@ -1,3 +1,4 @@
+import 'package:awsome_flutter/juexin/widget/widget_communicate_device.dart';
 import 'package:awsome_flutter/tabs/pingJing.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -165,5 +166,9 @@ List<GetPage<dynamic>> RoutePages = [
   GetPage(
     name: '/communicate_html',
     page: () => CommunicateHTMLPage(),
+  ),
+  GetPage(
+    name: '/communicate_device',
+    page: () => CommunicateDevicePage(),
   ),
 ];

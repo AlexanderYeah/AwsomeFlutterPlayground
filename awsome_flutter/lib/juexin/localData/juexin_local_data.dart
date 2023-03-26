@@ -72,6 +72,11 @@ List jx_widget_list_data = [
     "title": "Flutter 调用H5",
     "content": "Flutter 和 H5 之间的相互调用"
   },
+  {
+    "route": "/communicate_device",
+    "title": "Flutter 调用原生操作",
+    "content": "Flutter 和原生之间的通信"
+  },
 ];
 
 List jx_reseach_key_list_data = [
