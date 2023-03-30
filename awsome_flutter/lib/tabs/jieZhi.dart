@@ -71,6 +71,9 @@ class _JieZhiPageState extends State<JieZhiPage> {
         case 7:
           targetRoute = "/storage";
           break;
+        case 8:
+          targetRoute = "/camera";
+          break;
         case 9:
           targetRoute = "/theme_list";
           break;
@@ -89,17 +92,6 @@ class _JieZhiPageState extends State<JieZhiPage> {
       appBar: AppBar(
         title: Text("节制"),
       ),
-      // body: InkWell(
-      //   onTap: () {
-      //     // 点击
-      //     SKCache.getInstance().setString("Name", "Leonardo");
-      //
-      //     var value = SKCache.getInstance().get("Name");
-      //     print(value);
-      //   },
-      //   child: Container(
-      //     child: Center(child: Text("点")),
-      //   ),
       body: Container(
         child: ListView.builder(
           itemCount: _contentList.length,

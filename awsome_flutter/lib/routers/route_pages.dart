@@ -1,3 +1,4 @@
+import 'package:awsome_flutter/jiezhi/camera/camera.dart';
 import 'package:awsome_flutter/juexin/widget/widget_communicate_device.dart';
 import 'package:awsome_flutter/tabs/pingJing.dart';
 import 'package:flutter/material.dart';
@@ -33,6 +34,7 @@ import '../juexin/researchKey/research_key_list.dart';
 import '../juexin/researchKey/rk_normal_key.dart';
 import '../juexin/researchKey/rk_widget_element.dart';
 import '../juexin/researchKey/rk_global_key.dart';
+import '../yongqi/animatedList/animated_cell_list.dart';
 import '../yongqi/movieCard/movie_card_page.dart';
 
 List<GetPage<dynamic>> RoutePages = [
@@ -170,5 +172,17 @@ List<GetPage<dynamic>> RoutePages = [
   GetPage(
     name: '/communicate_device',
     page: () => CommunicateDevicePage(),
+  ),
+  GetPage(
+    name: '/camera',
+    page: () => CameraPage(),
+  ),
+  GetPage(
+    name: '/movie_card_demo',
+    page: () => MovieCardPage(),
+  ),
+  GetPage(
+    name: '/animated_cell_list',
+    page: () => AnimatedListCellPage(),
   ),
 ];

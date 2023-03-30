@@ -57,6 +57,9 @@ class _MovieCardPageState extends State<MovieCardPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          title: Text("轮播图"),
+        ),
         body: SizedBox(
             height: MediaQuery.of(context).size.height * 0.55,
             child: PageView(
