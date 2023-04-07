@@ -17,15 +17,23 @@ List jz_content_data = [
 
 List jz_widget_data = [
   {
+    "route": "/text_demo",
     "title": "Text以及RichText",
     "content": "文本组件,如android 开发中的TextView",
     "tips": "显示文字以及丰富的样式，包含大小粗细阴影"
   },
   {
+    "route": "/button_demo",
     "title": "Button",
     "content": "Flutter 没有给出Button组件,而是直接给出了各式各样的button组件",
     "tips":
         "常用的RaisedButton,FlatButton,IconButton,OutlineButton,FloatingActionButton的Button 组件, Flutter 3的SDK弃用了其中几种\n 1> FlatButton 被替换为TextButton,\n 2> RaisedButton 被替换为 ElevatedButton \n 3>OutlineButton 被替换为OutlinedButton"
+  },
+  {
+    "route": "/stateless_widget_demo",
+    "title": "StateLessWidget",
+    "content": "无状态组件",
+    "tips": "不需要数据更新"
   },
 ];
 

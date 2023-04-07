@@ -1,4 +1,5 @@
 import 'package:awsome_flutter/jiezhi/camera/camera.dart';
+import 'package:awsome_flutter/jiezhi/widget/stateless_widget_demo.dart';
 import 'package:awsome_flutter/juexin/widget/widget_communicate_device.dart';
 import 'package:awsome_flutter/tabs/pingJing.dart';
 import 'package:flutter/material.dart';
@@ -76,7 +77,7 @@ List<GetPage<dynamic>> RoutePages = [
   ),
   GetPage(
     name: '/widget_list',
-    page: () => JXWidgetListPage(),
+    page: () => WidgetListPage(),
   ),
   GetPage(
     name: '/route_manage_list',
@@ -189,5 +190,9 @@ List<GetPage<dynamic>> RoutePages = [
   GetPage(
     name: '/basic_grammar',
     page: () => BasicGrammarPage(),
+  ),
+  GetPage(
+    name: '/stateless_widget_demo',
+    page: () => StateLessDemoPage(),
   ),
 ];

@@ -21,17 +21,7 @@ class _WidgetListPageState extends State<WidgetListPage> {
         itemBuilder: (BuildContext context, int index) {
           return JZListItem(index, jz_widget_data[index]["title"],
               jz_widget_data[index]["content"], (idx) {
-            var targetRoute = "";
-            switch (idx) {
-              case 0:
-                targetRoute = "/text_demo";
-                break;
-              case 1:
-                targetRoute = "/button_demo";
-                break;
-
-              default:
-            }
+            var targetRoute = jz_widget_data[index]["route"];
             Navigator.of(context).pushNamed(targetRoute);
           });
         },
