@@ -10,6 +10,7 @@ import 'package:awsome_flutter/tabs/yongQi.dart';
 import 'package:awsome_flutter/jiezhi/route/route_manage_list.dart';
 import '../jiezhi/animation/animation.dart';
 import '../jiezhi/animation/an_animation.dart';
+import '../jiezhi/basic_grammar/basic_grammar.dart';
 import '../jiezhi/storage/storage.dart';
 import '../jiezhi/storage/sto_share_preference.dart';
 import '../jiezhi/widget/widget_list.dart';
@@ -184,5 +185,9 @@ List<GetPage<dynamic>> RoutePages = [
   GetPage(
     name: '/animated_cell_list',
     page: () => AnimatedListCellPage(),
+  ),
+  GetPage(
+    name: '/basic_grammar',
+    page: () => BasicGrammarPage(),
   ),
 ];

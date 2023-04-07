@@ -56,6 +56,9 @@ class _JieZhiPageState extends State<JieZhiPage> {
     return JZListItem(index, title, content, (index) {
       var targetRoute = "";
       switch (index) {
+        case 0:
+          targetRoute = "/basic_grammar";
+          break;
         case 1:
           targetRoute = "/widget_list";
           break;

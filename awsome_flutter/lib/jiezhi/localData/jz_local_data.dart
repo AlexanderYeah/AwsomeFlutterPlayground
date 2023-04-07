@@ -1,5 +1,5 @@
 List jz_content_data = [
-  {"title": "初识Flutter", "content": "1231321"},
+  {"title": "基本语法", "content": "1231321"},
   {"title": "Flutter 组件", "content": "1231321"},
   {"title": "状态管理", "content": "1231321"},
   {"title": "事件处理", "content": "1231321"},
