@@ -35,6 +35,7 @@ List jz_widget_data = [
     "content": "无状态组件",
     "tips": "不需要数据更新"
   },
+  {"route": "/future_demo", "title": "异步操作", "content": "异步", "tips": "异步"},
 ];
 
 List jz_state_data = [

@@ -55,7 +55,11 @@ class _ProductItemState extends State<ProductItem> {
           border: Border.all(width: 1, color: Colors.lightBlueAccent)),
       child: Column(
         children: [
-          ElevatedButton(onPressed: () {}, child: Text("123")),
+          ElevatedButton(onPressed: () {
+            setState(() {
+              
+            });
+          }, child: Text("123")),
           Text(
             widget.name,
             style: titleStyle,

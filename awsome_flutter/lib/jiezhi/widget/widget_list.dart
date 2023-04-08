@@ -29,3 +29,32 @@ class _WidgetListPageState extends State<WidgetListPage> {
     );
   }
 }
+
+class DemoWidget extends StatefulWidget {
+  const DemoWidget({super.key});
+
+  @override
+  State<DemoWidget> createState() => _DemoWidgetState();
+}
+
+class _DemoWidgetState extends State<DemoWidget> {
+  @override
+  void initState() {
+    // 这里必须要调用 super, 父类方法上方有一个关键字 @mustCallSuper
+    super.initState();
+    print("DemoWidgetState-initState");
+  }
+
+  @override
+  void didChangeDependencies() {
+    // TODO: implement didChangeDependencies
+    super.didChangeDependencies();
+    print("DemoWidgetState-didChangeDependencies");
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    print("DemoWidgetState-build");
+    return Container();
+  }
+}

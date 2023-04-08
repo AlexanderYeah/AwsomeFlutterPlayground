@@ -1,4 +1,5 @@
 import 'package:awsome_flutter/jiezhi/camera/camera.dart';
+import 'package:awsome_flutter/jiezhi/widget/future_demo.dart';
 import 'package:awsome_flutter/jiezhi/widget/stateless_widget_demo.dart';
 import 'package:awsome_flutter/juexin/widget/widget_communicate_device.dart';
 import 'package:awsome_flutter/tabs/pingJing.dart';
@@ -194,5 +195,9 @@ List<GetPage<dynamic>> RoutePages = [
   GetPage(
     name: '/stateless_widget_demo',
     page: () => StateLessDemoPage(),
+  ),
+  GetPage(
+    name: '/future_demo',
+    page: () => FutureDemoPage(),
   ),
 ];
