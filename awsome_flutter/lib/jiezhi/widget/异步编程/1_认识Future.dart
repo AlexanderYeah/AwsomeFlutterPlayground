@@ -17,7 +17,14 @@ void asyncMethod() {
   print("main start");
   var future = getAsyncNetworkData();
   future.then((String value) {
+    // 只有拿到结果 才会执行这里面的代码
     print(value);
+  }).catchError((error) {
+    // 打印结果 Exception: 我是错误信息
+    print(error);
+  }).whenComplete(() {
+    // 代码走这，不管成功或者失败都会走这里
+    print("代码执行完毕");
   });
   print("main end");
 }
@@ -25,7 +32,10 @@ void asyncMethod() {
 Future<String> getAsyncNetworkData() {
   return Future<String>(() {
     sleep(Duration(seconds: 3));
-    return "hello world";
+    // return "hello world";
+
+    // 抛出异常
+    throw Exception("我是错误信息");
   });
 }
 
