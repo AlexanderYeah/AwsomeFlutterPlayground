@@ -1,4 +1,5 @@
 import 'package:awsome_flutter/jiezhi/camera/camera.dart';
+import 'package:awsome_flutter/jiezhi/state/inherited_widget_demo.dart';
 import 'package:awsome_flutter/jiezhi/widget/future_demo.dart';
 import 'package:awsome_flutter/jiezhi/widget/stateless_widget_demo.dart';
 import 'package:awsome_flutter/juexin/widget/widget_communicate_device.dart';
@@ -204,5 +205,9 @@ List<GetPage<dynamic>> RoutePages = [
   GetPage(
     name: '/global_key_demo',
     page: () => GlobalKeyDemoPage(),
+  ),
+  GetPage(
+    name: '/inherited_widget_demo',
+    page: () => InheritedDmeoPage(),
   ),
 ];

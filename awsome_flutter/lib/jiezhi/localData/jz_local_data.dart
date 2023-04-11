@@ -68,6 +68,12 @@ List jz_state_data = [
     "tips":
         "GetX 因为不需要上下文，突破了InheritedWidget的限制，我们可以在全局和模块间共享状态，这正是 BLoc 、Provider 等框架的短板"
   },
+  {
+    "route": "/inherited_widget_demo",
+    "title": "InheritedWidget",
+    "content": "InheritedWidget 可以实现跨组件数据的传递",
+    "tips": "InheritedWidget 可以实现跨组件数据的传递"
+  },
 ];
 
 List jz_route_data = [
