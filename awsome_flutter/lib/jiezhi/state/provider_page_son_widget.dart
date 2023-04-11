@@ -5,18 +5,22 @@ import 'provider_page_son_widget.dart';
 
 class ProviderSonWidget extends StatefulWidget {
   const ProviderSonWidget({super.key});
-
   @override
   State<ProviderSonWidget> createState() => _ProviderSonWidgetState();
 }
 
 class _ProviderSonWidgetState extends State<ProviderSonWidget> {
-  var _countProvider;
+  // var _countProvider;
   @override
   Widget build(BuildContext context) {
-    _countProvider = Provider.of<CountProvider>(context);
-    return Container(
-      child: Text("${this._countProvider.count}"),
+    print("计数改变了,ProviderSonWidgetState 调用了build");
+    // _countProvider = Provider.of<CountProvider>(context);
+    return Consumer<CountProvider>(
+      builder: (context, cntProvider, child) {
+        return Container(
+          child: Text("${cntProvider.count}"),
+        );
+      },
     );
   }
 }
