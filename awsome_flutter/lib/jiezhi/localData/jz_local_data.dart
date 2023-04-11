@@ -36,6 +36,12 @@ List jz_widget_data = [
     "tips": "不需要数据更新"
   },
   {"route": "/future_demo", "title": "异步操作", "content": "异步", "tips": "异步"},
+  {
+    "route": "/global_key_demo",
+    "title": "GlobalKey的使用",
+    "content": "GlobalKey的使用",
+    "tips": "GlobalKey的使用"
+  },
 ];
 
 List jz_state_data = [
