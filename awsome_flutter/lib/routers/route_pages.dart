@@ -1,4 +1,5 @@
 import 'package:awsome_flutter/jiezhi/camera/camera.dart';
+import 'package:awsome_flutter/jiezhi/event/event_pointer.demo.dart';
 import 'package:awsome_flutter/jiezhi/state/inherited_widget_demo.dart';
 import 'package:awsome_flutter/jiezhi/widget/future_demo.dart';
 import 'package:awsome_flutter/jiezhi/widget/stateless_widget_demo.dart';
@@ -15,6 +16,7 @@ import 'package:awsome_flutter/jiezhi/route/route_manage_list.dart';
 import '../jiezhi/animation/animation.dart';
 import '../jiezhi/animation/an_animation.dart';
 import '../jiezhi/basic_grammar/basic_grammar.dart';
+import '../jiezhi/event/event_list.dart';
 import '../jiezhi/storage/storage.dart';
 import '../jiezhi/storage/sto_share_preference.dart';
 import '../jiezhi/widget/widget_list.dart';
@@ -209,5 +211,13 @@ List<GetPage<dynamic>> RoutePages = [
   GetPage(
     name: '/inherited_widget_demo',
     page: () => InheritedDmeoPage(),
+  ),
+  GetPage(
+    name: '/event_list',
+    page: () => EventListPage(),
+  ),
+  GetPage(
+    name: '/event_point_demo',
+    page: () => EventPointerDemoPage(),
   ),
 ];

@@ -76,6 +76,16 @@ List jz_state_data = [
   },
 ];
 
+List jz_event_list_data = [
+  {
+    "route": "/event_point_demo",
+    "title": "指针事件",
+    "content": "原始指针事件（Pointer Events）：描述了屏幕上由触摸板、鼠标、指示笔等触发的指针的位置和移动",
+    "tips":
+        "PointerDownEvent 指针在特定位置与屏幕接触 PointerMoveEvent 指针从屏幕的一个位置移动到另外一个位置 PointerUpEvent 指针与屏幕停止接触 PointerCancelEvent 指针因为一些特殊情况被取消"
+  },
+];
+
 List jz_route_data = [
   {
     "route": "",

@@ -8,6 +8,8 @@ import './tabs/tab.dart';
 import './routers/router.dart';
 import 'package:get/get.dart';
 
+import 'jiezhi/state/userinfo_provider.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -19,7 +21,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-        providers: [ChangeNotifierProvider(create: (_) => CountProvider())],
+        providers: [
+          ChangeNotifierProvider(create: (_) => CountProvider()),
+          ChangeNotifierProvider(create: (_) => UserInfoProvider())
+        ],
         child: GetMaterialApp(
           title: "DDDD",
           getPages: RoutePages,
