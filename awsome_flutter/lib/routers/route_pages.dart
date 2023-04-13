@@ -1,3 +1,5 @@
+import 'package:awsome_flutter/jiezhi/animation/hero_animation_home.dart';
+import 'package:awsome_flutter/jiezhi/animation/study_animation.dart';
 import 'package:awsome_flutter/jiezhi/camera/camera.dart';
 import 'package:awsome_flutter/jiezhi/event/event_pointer.demo.dart';
 import 'package:awsome_flutter/jiezhi/state/inherited_widget_demo.dart';
@@ -219,5 +221,13 @@ List<GetPage<dynamic>> RoutePages = [
   GetPage(
     name: '/event_point_demo',
     page: () => EventPointerDemoPage(),
+  ),
+  GetPage(
+    name: '/study_animation_page',
+    page: () => StudyAnimationPage(),
+  ),
+  GetPage(
+    name: '/hero_animation_home',
+    page: () => HeroAnimationPageDemo(),
   ),
 ];

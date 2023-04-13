@@ -24,7 +24,8 @@ class _AnimationPageState extends State<AnimationPage> {
               jz_Animation_data[index]["title"],
               jz_Animation_data[index]["content"],
               (value) {
-                Navigator.of(context).pushNamed("/an_animation");
+                String targetRoute = jz_Animation_data[value]["route"];
+                Navigator.of(context).pushNamed(targetRoute);
               },
               tipsClick: (idx) {
                 print(idx);

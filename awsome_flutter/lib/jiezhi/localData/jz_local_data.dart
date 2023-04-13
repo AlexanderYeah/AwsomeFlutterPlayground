@@ -98,12 +98,25 @@ List jz_route_data = [
 
 List jz_Animation_data = [
   {
+    "route": "/an_animation",
     "title": "Animation 对象",
     "content":
         "它是一个抽象类，具体功能实现由 其子类完成。\n 1>AnimationController  动画控制器 \n 2>initState 中初始化动画控制器 \n 3> 混入TickProviderStateMixin \n 4> 参考：https://juejin.cn/post/6979836293232459812\n",
     "tips":
         " flutter中动画分为两类：基于tween或基于物理的。补间(Tween)动画“介于两者之间”的简称。在补间动画中，定义了开始点和结束点、时间线以及定义转换时间和速度的曲线。然后由框架计算如何从开始点过渡到结束点。基于物理的动画在基于物理的动画中，运动被模拟为与真实世界的行为相似。例如，当你掷球时，它在何处落地，取决于抛球速度有多快、球有多重、距离地面有多远。 类似地，将连接在弹簧上的球落下（并弹起）与连接到绳子上的球放下的方式也是不同。"
   },
+  {
+    "route": "/study_animation_page",
+    "title": "Animation 示例",
+    "content": "介绍学习",
+    "tips": "了解一下"
+  },
+  {
+    "route": "/hero_animation_home",
+    "title": "Hero 示例",
+    "content": "介绍学习",
+    "tips": "了解一下"
+  }
 ];
 
 List jz_storage_data = [
