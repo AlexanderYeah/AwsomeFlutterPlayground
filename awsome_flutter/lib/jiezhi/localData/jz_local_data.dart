@@ -42,6 +42,12 @@ List jz_widget_data = [
     "content": "GlobalKey的使用",
     "tips": "GlobalKey的使用"
   },
+  {
+    "route": "/row_study_page",
+    "title": "Flex子组件之Row",
+    "content": "Flex子组件之Row",
+    "tips": "Flex子组件之Row"
+  },
 ];
 
 List jz_state_data = [

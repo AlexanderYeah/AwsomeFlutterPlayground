@@ -4,6 +4,7 @@ import 'package:awsome_flutter/jiezhi/camera/camera.dart';
 import 'package:awsome_flutter/jiezhi/event/event_pointer.demo.dart';
 import 'package:awsome_flutter/jiezhi/state/inherited_widget_demo.dart';
 import 'package:awsome_flutter/jiezhi/widget/future_demo.dart';
+import 'package:awsome_flutter/jiezhi/widget/row_study.dart';
 import 'package:awsome_flutter/jiezhi/widget/stateless_widget_demo.dart';
 import 'package:awsome_flutter/juexin/widget/widget_communicate_device.dart';
 import 'package:awsome_flutter/juexin/widget/widget_globalkey_demo.dart';
@@ -229,5 +230,9 @@ List<GetPage<dynamic>> RoutePages = [
   GetPage(
     name: '/hero_animation_home',
     page: () => HeroAnimationPageDemo(),
+  ),
+  GetPage(
+    name: '/row_study_page',
+    page: () => RowStudyPageDemo(),
   ),
 ];
