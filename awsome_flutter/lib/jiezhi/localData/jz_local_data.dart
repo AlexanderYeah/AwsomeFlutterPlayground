@@ -44,7 +44,13 @@ List jz_widget_data = [
   },
   {
     "route": "/row_study_page",
-    "title": "Flex子组件之Row",
+    "title": "Row,Column,Expanded,Stack",
+    "content": "Flex子组件之Row",
+    "tips": "Flex子组件之Row"
+  },
+  {
+    "route": "/scroll_widget_study_page",
+    "title": "滚动子组件",
     "content": "Flex子组件之Row",
     "tips": "Flex子组件之Row"
   },
